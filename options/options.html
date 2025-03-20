@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ask Gemini Options</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+  <div class="container options-container">
+    <div class="header">
+      <h2>Ask Gemini Settings</h2>
+    </div>
+
+    <div class="content">
+      <div class="section">
+        <label for="apiKey">Gemini API Key:</label>
+        <input type="password" id="apiKey" placeholder="Enter your Gemini API key">
+        <button id="showKey" class="show-btn">Show</button>
+      </div>
+
+      <div class="section">
+        <button id="saveBtn" class="submit-btn">Save Settings</button>
+      </div>
+
+      <div id="status" class="status-message"></div>
+
+      <div class="help-text">
+        <p>To get your Gemini API key:</p>
+        <ol>
+          <li>Visit the <a href="https://makersuite.google.com/app/apikey" target="_blank">Google AI Studio</a></li>
+          <li>Create or select a project</li>
+          <li>Generate an API key</li>
+          <li>Copy and paste the key here</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <script src="options.js"></script>
+</body>
+</html> 

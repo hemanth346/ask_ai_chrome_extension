@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ask Gemini</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h2>Ask Gemini</h2>
+    </div>
+
+    <div class="content">
+      <div class="section">
+        <label for="selectedText">Selected Text:</label>
+        <textarea id="selectedText" readonly></textarea>
+      </div>
+
+      <div class="section">
+        <label for="question">Your Question:</label>
+        <textarea id="question" placeholder="What would you like to know about this text?"></textarea>
+      </div>
+
+      <div class="error-message" id="errorMessage"></div>
+
+      <div class="section">
+        <button id="submitBtn" class="submit-btn">Ask Gemini</button>
+      </div>
+
+      <div class="loading" id="loading">
+        <div class="spinner"></div>
+        <p>Getting response from Gemini...</p>
+      </div>
+
+      <div class="section response-section" id="responseSection">
+        <label>Gemini's Response:</label>
+        <div id="response" class="response"></div>
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html> 
